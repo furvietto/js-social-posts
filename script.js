@@ -117,7 +117,7 @@ for (let x = 0; x < button.length; x++) {
     const element = button[x]; //tutti bottoni
     let elementLikes = post[x].likes; //24
     let greenLikes = green[x];
-    element.addEventListener("click", function () {
+    element.addEventListener("click", function clickLikes() {
         likes.innerHTML = elementLikes += 1
         greenLikes.classList.add("like-button--liked")
     })
